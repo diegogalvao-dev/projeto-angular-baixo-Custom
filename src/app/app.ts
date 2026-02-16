@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Acessorio } from './components/Acessorios/acessorios';
 import {MatTableModule} from '@angular/material/table';
-import { AcessorioToolBar } from './components/acessorio-tool-bar/acessorio-tool-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Acessorio, MatTableModule, AcessorioToolBar],
+  imports: [RouterOutlet, MatTableModule, MatToolbarModule, MatIconModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
